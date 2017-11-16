@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MyMealDetailscrollView">
+  
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#f9fcfc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp">
+
+  <RelativeLayout
+      android:id="@+id/MyMealsDetailsScoreSubmitted"
+      android:background="#fff9af"
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:visibility="gone"
+      android:layout_height="55dp">
+    <TextView
+      android:id="@+id/MyMealsDetailsScoreSubmitted"
+      android:text ="Your Grade Was Submitted"
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18dp"
+      android:paddingTop="10dp"
+      android:paddingLeft="10dp"
+      android:layout_alignParentLeft="true"
+      android:textColor="@android:color/black"/>
+
+    <ImageView
+       android:id="@+id/MyMealsDetailsCloseScoreSubmitted"
+       android:src="@drawable/X"
+       android:layout_alignParentRight="true"
+       android:paddingTop="10dp"
+       android:paddingRight="10dp"
+       android:layout_width="25dp"
+       android:layout_height="25dp"/>
+  </RelativeLayout>
+  
+    <ImageView
+        android:id="@+id/MyMealsDetailsImage"
+        android:src="@drawable/AddPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+      android:id="@+id/MyMealsDetailPostedOn"
+      android:text =""
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18dp"
+      android:textColor="@android:color/black"
+      android:gravity="left"
+      android:textStyle="bold"/>
+
+    <TextView
+      android:id="@+id/MyMealsDetailDescription"
+      android:text =""
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18dp"
+      android:paddingTop="10dp"
+      android:textColor="@android:color/black"
+      android:gravity="left"/>
+  
+  <RelativeLayout
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+    <TextView
+      android:id="@+id/MyMealsDetailGradeLabel"
+      android:text ="Healthiness Score:"
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18dp"
+      android:paddingTop="10dp"
+      android:layout_alignParentLeft="true"
+      android:textColor="@android:color/black"/>
+
+    <TextView
+      android:id="@+id/MyMealsDetailLikeCount"
+      android:text =""
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18dp"
+      android:paddingTop="10dp"
+      android:paddingLeft="10dp"
+      android:layout_toRightOf="@+id/MyMealsDetailGradeLabel"
+      android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/MyMealsGradesImage"
+        android:src="@drawable/Diary"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"/>
+  </RelativeLayout>
+
+    <LinearLayout
+      android:id="@+id/MyMealsDetailsSubmittedGradeSection"
+      android:orientation="vertical"
+      android:background="#f9fcfc"
+      android:visibility="gone"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+        <TextView
+          android:id="@+id/MyMealsDetailGradeUserSubmittedLabel"
+          android:text ="Grade You Submitted:"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="18dp"
+          android:paddingTop="10dp"
+          android:textColor="@android:color/black"
+          android:gravity="left" />
+        <TextView
+          android:id="@+id/MyMealsDetailGradeUserSubmittedValue"
+          android:text =""
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="18dp"
+          android:paddingTop="10dp"
+          android:textColor="@android:color/black"
+          android:gravity="left" />    
+    </LinearLayout>
+      
+  <LinearLayout
+    android:id="@+id/MyMealsDetailsGradingSection"
+    android:orientation="vertical"
+    android:background="#f9fcfc"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+      android:id="@+id/MyMealsDetailGradeDescription"
+      android:text ="Grade this meal:"
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18dp"
+      android:paddingTop="10dp"
+      android:textColor="@android:color/black"
+      android:gravity="left" />
+
+    <RadioGroup
+      android:id="@+id/RadioGroupGrades"
+      android:orientation="horizontal"
+      android:padding="15dp"
+      android:background="#d7dfea"
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+      <RadioButton
+        android:id="@+id/radio_A"
+        android:text="A"
+        android:checked="true"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+      <RadioButton
+        android:id="@+id/radio_B"
+        android:text="B"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+      <RadioButton
+        android:id="@+id/radio_C"
+        android:text="C"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+      <RadioButton
+        android:id="@+id/radio_D"
+        android:text="D"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+      <RadioButton
+        android:id="@+id/radio_F"
+        android:text="F"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+      android:id="@+id/MyMealsDetailsSubmitGrade"
+      android:text="Submit Grade"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_marginTop="20dp" />
+
+  </LinearLayout>
+
+</LinearLayout>
+
+
+</ScrollView>

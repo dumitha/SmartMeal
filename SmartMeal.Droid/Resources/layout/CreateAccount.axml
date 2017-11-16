@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainScrollView">
+
+  <LinearLayout
+      android:background="#f9fcfc"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingTop="10dp">
+
+    <TextView
+       android:text="Create Account"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/CreateAccountTextView"
+       android:paddingTop="10dp"
+       android:textSize="25dp"
+       android:gravity="center_horizontal"
+       android:textColor="@android:color/black" />
+
+    <TextView
+      android:id="@+id/CreateFirstNameTextView"
+      android:text ="First Name:"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:textSize="16dp"
+      android:textColor="@android:color/black"
+      android:textStyle="bold"
+      android:gravity="left"
+      android:layout_marginLeft="10dp"
+      android:paddingTop="10dp"
+      android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:inputType="text"
+        android:hint="First Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10dp"
+        android:id="@+id/CreateFirstNameEditView"/>
+
+    <TextView
+      android:id="@+id/CreateLastNameTextView"
+      android:text ="Last Name:"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:textSize="16dp"
+      android:textColor="@android:color/black"
+      android:textStyle="bold"
+      android:gravity="left"
+      android:layout_marginLeft="10dp"
+      android:paddingTop="10dp"
+      android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:inputType="text"
+        android:hint="Last Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/CreateLastNameEditView"/>
+
+    <TextView
+      android:id="@+id/CreateUserNameTextView"
+      android:text ="Email:"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:textSize="16dp"
+      android:textColor="@android:color/black"
+      android:textStyle="bold"
+      android:gravity="left"
+      android:layout_marginLeft="10dp"
+      android:paddingTop="10dp"
+      android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:inputType="text"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/CreateUserNameEditView"/>
+
+    <TextView
+      android:id="@+id/CreatePasswordTextView"
+      android:text ="Password:"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:textSize="16dp"
+      android:textColor="@android:color/black"
+      android:textStyle="bold"
+      android:gravity="left"
+      android:layout_marginLeft="10dp"
+      android:paddingTop="10dp"
+      android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/CreatePasswordEditView"/>
+
+    <TextView
+      android:id="@+id/CreateConfirmPasswordTextView"
+      android:text ="Confirm Password:"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:textSize="16dp"
+      android:textColor="@android:color/black"
+      android:textStyle="bold"
+      android:gravity="left"
+      android:layout_marginLeft="10dp"
+      android:paddingTop="10dp"
+      android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/CreateConfirmPasswordEditView"/>
+
+    <Button
+        android:text="Create Account"
+        android:layout_width="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreateAccountButton"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+  </LinearLayout>
+
+</ScrollView>
